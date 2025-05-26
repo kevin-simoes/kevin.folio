@@ -1,0 +1,108 @@
+/* Importa a fonte Inter (caso esteja usando web) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Define fonte global e variáveis */
+:root {
+  /* Fonte padrão */
+  --fonte-principal: 'Inter', sans-serif;
+
+  /* Tamanhos e alturas de linha */
+  --padrao-lg: 18.7px;
+  --padrao-lg-line: auto;
+
+  --padrao-md: 16px;
+  --padrao-md-line: auto;
+
+  --padrao-sm: 14px;
+  --padrao-sm-line: auto;
+
+  --padrao-xs: 12px;
+  --padrao-xs-line: auto;
+
+  --botao: 16px;
+  --botao-line: auto;
+
+  --titulo-sm: 20px;
+  --titulo-sm-line: auto;
+
+  --titulo-md: 24px;
+  --titulo-md-line: auto;
+
+  --titulo-lg: 36px;
+  --titulo-lg-line: auto;
+
+  --titulo-xl: 40px;
+  --titulo-xl-line: auto;
+
+  --titulo-hg: 72px;
+  --titulo-hg-line: auto;
+
+  --background-color: #15102C;
+  --text-color: #FCFBFE;
+
+  --glass-color: #30303029;
+
+  --primary: #5839D4;
+  --secundary: #B39DDD;
+  --accent: #7454F2;
+}
+
+/* Aplica a fonte globalmente */
+* {
+  font-family: var(--fonte-principal);
+  margin: 0px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background-color: #15102C;
+  }
+  
+
+h1 {
+    font-size: var(--titulo-hg);
+    line-height: var(--titulo-hg-line);
+    color: var(--text-color);
+  }
+  
+  h2 {
+    font-size: var(--titulo-xl);
+    line-height: var(--titulo-xl-line); 
+    color: var(--text-color);
+  }
+  
+  h3 {
+    font-size: var(--titulo-lg);
+    line-height: var(--titulo-lg-line);
+    color: var(--text-color);
+    line-height: 2.2rem;
+  }
+
+  h4 {
+    font-size: var(--titulo-md);
+    line-height: var(--titulo-md-line);
+    color: var(--text-color);
+  }
+
+  h5 {
+    font-size: var(--titulo-sm);
+    line-height: var(--titulo-sm-line);
+    color: var(--text-color);
+  }
+
+  h6 {
+    font-size: var(  --padrao-xs);
+    line-height: var(--titulo-xs-line);
+    color: var(--text-color);
+  }
+  
+  p {
+    font-size: var(--padrao-md);
+    line-height: var(--padrao-md-line);
+    color: var(--text-color);
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }

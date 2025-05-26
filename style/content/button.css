@@ -1,0 +1,23 @@
+
+
+.bu {
+    font-size: var(--botao);
+    line-height: var(--botao-line);
+    color: var(--accent);
+    padding: 0.5rem 1.5rem;
+    width: 90px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Variação de estilo para o botão */
+  .type1 {
+    border: 2px solid var(--accent);
+    background-color: transparent;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .type1:hover {
+    background-color: var(--accent);
+    color: var(--text-color);
+  }
+  

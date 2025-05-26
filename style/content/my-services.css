@@ -1,0 +1,53 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.services-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 953px;
+    gap: 4rem;
+    margin: 0 auto;
+}
+
+.services-laptop {
+    background-color: lightgray;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 200px 0 200px;
+
+}
+
+.services-laptop img {
+    width: 387.63px;
+    height: 252px;
+}
+
+.services-txt {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 453px;
+}
+
+.services-mobile {
+    background-color: var(--accent);
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px 0 200px 0;
+}
+
+.services-mobile img {
+    width: 181px;
+    height: 361px;
+
+}
