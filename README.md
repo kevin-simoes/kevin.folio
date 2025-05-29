@@ -17,8 +17,8 @@ Este site é responsivo, escuro por padrão (dark mode), e traz um visual que un
 - **Header** com links de navegação (Home, Services, Projects, etc)
 - **Apresentação pessoal** com foto, localização e tech stack
 - **Serviços oferecidos** com destaque visual e ícones
-- **Skills hub** EM BREVE
-- **Formulário** EM BREVE
+- **Skills hub** com porcentagens, quase completa
+- **Formulário** formulário funcional
 
 ---
 
@@ -30,6 +30,8 @@ Este site é responsivo, escuro por padrão (dark mode), e traz um visual que un
 - **Google Fonts**
 - **Animações CSS**
 - **Design responsivo** (Flexbox/Grid) EM BREVE
+- **Modo Claro/Escuro**
+- **StaticForm**
 
 ---
 
