@@ -8,14 +8,18 @@
     width: 90px;
     transition: all 0.3s ease;
   }
-  
-  /* Variação de estilo para o botão */
+
   .type1 {
     border: 2px solid var(--accent);
     background-color: transparent;
   }
+
+  .type2 {
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    width: 35%;
+  }
   
-  /* Efeito ao passar o mouse */
   .type1:hover {
     background-color: var(--accent);
     color: var(--text-color);

@@ -1,0 +1,129 @@
+.form-space {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1105px;
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+
+.form-left-side {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 494px;
+}
+
+.form-left-side div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.form-left-side span {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.contact-form {
+    background-color: var(--glass-color);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 551px;
+}
+
+.form-right-top {
+    display: grid;
+    grid-template-rows: 80px 80px;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 8px 0.5rem;
+    font-size: var(--padrao-sm);
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    width: 250px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 235px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-input:focus ~ .input-icon img {
+    filter: invert(53%) sepia(98%) saturate(2476%) hue-rotate(176deg) brightness(91%) contrast(101%);
+}
+.form-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-text-content textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 8px 0.5rem;
+    font-size: var(--padrao-sm);
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    resize: vertical;
+}
+
+.form-content input {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 8px 0.5rem;
+    font-size: var(--padrao-sm);
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: var(--input-color);
+    color: var(--text-color);
+  }
+
+  .form-content input:focus {
+    border: 1px solid var(--accent);
+  }
+
+  
+.styled-select {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 8px 0.5rem;
+    font-size: var(--padrao-sm);
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    width: 100%;
+}
+  

@@ -1,0 +1,102 @@
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-image: url('../../img/images/background-main-skills.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+.skills-row {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+}
+
+.skills-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 561.5px;
+    gap: 2rem;
+}
+
+.skills-mini-card {
+    display: grid;
+    grid-template-rows: 1.4rem auto;
+    background-color: var(--glass-color);
+    backdrop-filter: blur(2px);
+    padding: 0 1rem 1.5rem 1rem;
+    border-radius: 20px;
+    width: 248px;
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.skills-mini-card nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.skills-big-card {
+    display: grid;
+    grid-template-rows: 1.4rem auto;
+    background-color: var(--glass-color);
+    backdrop-filter: blur(2px);
+    padding: 0 1rem 1.5rem 1rem;
+    border-radius: 20px;
+    width: 561.5px;
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.skills-big-card nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.skills-icon {
+    background-color: var(--accent);
+    padding: 0.4rem;
+    display: flex;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -19px;
+}
+
+.skills-progress {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skills-progress div {
+    display: flex;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    height: 5px;
+    border-radius: 10px;
+}

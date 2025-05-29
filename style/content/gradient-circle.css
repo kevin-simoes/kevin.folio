@@ -1,0 +1,88 @@
+.bg-circles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent) 10%, rgba(255,255,255,0) 70%);
+    opacity: 0.5;
+    width: 900px;
+    height: 900px;
+    z-index: 2;
+}
+
+.circle-light {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--secundary) 10%, rgba(255,255,255,0) 70%);
+    opacity: 0.5;
+    width: 900px;
+    height: 900px;
+    z-index: -1;
+}
+
+.circle-1 {
+    top: -400px;
+    left: -400px;
+}
+
+.circle-2 {
+    top: 229px;
+    right: -400px;
+}
+
+.circle-3 {
+    bottom: 1983px;
+    left: -450px;
+}
+
+.circle-4 {
+    bottom: 800px;
+    left: -500px;
+    z-index: -1;
+}
+
+.circle-5 {
+    top: 929px;
+    right: -500px;
+    z-index: -1;
+}
+
+.cursor-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent), transparent 60%);
+    transform: translate(-10%, -10%);
+    transition: transform 0.05s ease-out;
+    opacity: 1;
+    z-index: 2;
+    mix-blend-mode: screen;
+    transition: opacity 0.3s ease, transform 0.05s ease-out;
+  }
+  
+
+  @media (prefers-color-scheme: dark) {
+    .circle {
+        opacity: 0.25;
+      }
+
+      .circle-light {
+        opacity: 0.25;
+      }
+
+    .cursor-gradient {
+        opacity: 0.25;
+      }
+  }
+  
+  

@@ -4,15 +4,20 @@
     display: grid;
     grid-template-columns: 598px 519px;
     align-items: center;
-    margin: 6rem 0;
+    margin-top: 1rem;
+    gap: 4rem;
   }
 
-.content-portfolio {
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-}
+  .content-portfolio {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+    position: relative;
+    z-index: 1; 
+  }
 
   .left-side {
     display: flex;
@@ -20,11 +25,11 @@
     gap: 1rem;
   }
 
-  svg {
+   svg {
     color: var(--accent)
   }
 
-  svg:hover {
+  .introduction svg:hover {
     color: var(--primary);
   }
 
@@ -110,6 +115,10 @@
   color: var(--primary);
 }
 
+.introduction-down svg{
+  color: black;
+}
+
 .cep-font {
   color: black;
 }
@@ -144,3 +153,16 @@
   color: var(--accent);
   width: 125px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .introduction-down svg {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .introduction {
+    grid-template-columns: 800px;
+  }
+
+  }
