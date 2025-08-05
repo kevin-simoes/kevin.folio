@@ -86,6 +86,10 @@
     top: -19px;
 }
 
+.skills-icon svg {
+    color: black;
+}
+
 .skills-progress {
     background-color: white;
     height: 5px;

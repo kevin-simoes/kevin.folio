@@ -1,28 +1,27 @@
 .about-me {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-    margin: 5rem 0;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
 }
 
 .about-me::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
-    background-image: url('../../img/images/background-about-me.png');
-    background-size: cover;
-    background-position: center;
-    z-index: -2; 
-  }
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-image: url('../../img/images/background-about-me.png');
+  background-size: 100% auto; /* Força 100% de largura, altura ajustável */
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
 
 .about-info {
     width: 792px;
@@ -32,8 +31,12 @@
 }
 
 .about-info span {
-    display:grid;
-    grid-template-columns: auto auto;
+  display:grid;
+  grid-template-columns: auto auto;
+}
+
+.about-info h4 {
+  display:flex;
 }
 
 .about-contact {
@@ -72,3 +75,26 @@
 .about-contact-txt p {
     color: var(--accent);
 }
+
+  @media screen and (max-width: 444px) {
+    
+#about::before {
+    left: 21%;
+  }
+
+  #about {
+    grid-template-columns: auto;
+    flex-direction: column-reverse;
+    width: 400px;
+  }
+
+  #about img {
+    width: 1rem;
+  }
+
+  .about-info {
+    width: 390px;
+  }
+
+  }
+  

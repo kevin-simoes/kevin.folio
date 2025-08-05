@@ -18,21 +18,19 @@
 
 }
 
-.project-card {
+.project-card img {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 90%;
     height: fit-content;
     background-color: var(--glass-color);
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
-    border: 1px solid var(--border-color);
     align-items: center;
+    transition: 0.25s ease;
+    
 }
 
-.project-card img {
-    width: 90%;
-    margin: 1rem;
+.project-card img:hover {
     border-radius: 10px;
-    
 }

@@ -31,7 +31,7 @@
   --titulo-xl-line: auto;
 
   --titulo-hg: 72px;
-  --titulo-hg-line: auto;
+  --titulo-hg-line: 4rem;
 
   --background-color: #ffffff;
   --text-color: #15102C;
@@ -120,3 +120,8 @@ svg {
   }
 }
 
+
+@media screen and (max-width: 444px) {
+
+
+  }

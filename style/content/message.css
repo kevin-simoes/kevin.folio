@@ -6,7 +6,7 @@
     border: 1px solid var(--border-color);
     grid-template-columns: auto auto;
     gap: 1rem;
-    margin: 10rem;
+    margin: 7rem;
     border-radius: 20px;
     text-align: center;
 }
