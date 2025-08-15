@@ -5,7 +5,7 @@
     gap: 3rem;
     width: 100%;
     min-height: 100vh;
-    margin: 0;
+    margin: 0 auto;
   }
   
   .skills::before {
@@ -30,9 +30,11 @@
 
 .skills-group {
     display: grid;
-    grid-template-columns: auto auto;
-    width: 561.5px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Ajusta automaticamente */
     gap: 2rem;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 561.5px; /* Mantém limite em telas grandes */
+
 }
 
 .skills-mini-card {
@@ -42,9 +44,10 @@
     backdrop-filter: blur(2px);
     padding: 0 1rem 1.5rem 1rem;
     border-radius: 20px;
-    width: 248px;
+    width: 100%; /* Agora ocupa a coluna inteira */
     gap: 0.5rem;
     border: 1px solid var(--border-color);
+    box-sizing: border-box;
 }
 
 .skills-mini-card nav {
@@ -53,7 +56,6 @@
     justify-content: space-between;
 }
 
-
 .skills-big-card {
     display: grid;
     grid-template-rows: 1.4rem auto;
@@ -61,7 +63,7 @@
     backdrop-filter: blur(2px);
     padding: 0 1rem 1.5rem 1rem;
     border-radius: 20px;
-    width: 561.5px;
+    max-width: 561.5px;
     gap: 0.5rem;
     border: 1px solid var(--border-color);
 }
@@ -103,4 +105,15 @@
     background: linear-gradient(to right, var(--primary), var(--accent));
     height: 5px;
     border-radius: 10px;
+}
+
+@media (max-width: 610px){
+    .skills-group {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 248px));
+        max-width: 561.5px;
+    }
+
+    .skills-mini-card {
+    }
+    
 }

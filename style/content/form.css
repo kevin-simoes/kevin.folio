@@ -127,3 +127,27 @@
     width: 100%;
 }
   
+@media (max-width: 1110px) {
+
+    .form {
+        grid-template-columns: auto;
+    }
+
+    .form-left-side {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 875px;
+    }
+
+    .input#phone, .input#name, .input#email {
+        width: 100%;
+    }
+
+    .styled-select {
+        width: 74%;
+    }
+
+    .
+  }
