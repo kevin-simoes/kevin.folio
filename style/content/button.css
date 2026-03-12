@@ -19,6 +19,13 @@
     background-color: transparent;
     width: 35%;
   }
+
+  .type3 {
+    border: 2px solid var(--border-color);
+    color: var(--border-color);
+    background-color: transparent;
+    width: 35%;
+  }
   
   .type1:hover {
     background-color: var(--accent);
