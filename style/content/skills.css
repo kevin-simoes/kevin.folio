@@ -22,6 +22,13 @@
     z-index: -1;
   }
 
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-inline-start: 3rem;
+}
+
 .skills-row {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -63,7 +70,7 @@
     backdrop-filter: blur(2px);
     padding: 0 1rem 1.5rem 1rem;
     border-radius: 20px;
-    max-width: 561.5px;
+    max-width: 531.5px;
     gap: 0.5rem;
     border: 1px solid var(--border-color);
 }
